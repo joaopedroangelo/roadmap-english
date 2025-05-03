@@ -16,7 +16,7 @@
 
 | Day | Status | Link | Description |
 |-----|--------|------|-------------|
-| 01  | ✅      | [Day 01](days/day01/) | Self-introduction + Duolingo |
+| 01  | ✅      | [Day 01](days/day01.md) | Introduction |
 | 02  | ✅      | [Day 02](days/day02/) | Watched TED Talk + wrote notes |
 | 03  | ✅      | [Day 03](days/day03/) | Vocabulary: Food & Drinks |
 | 04  | ⏳      | [Day 04](days/day04/) | Listening exercise: Podcast |
