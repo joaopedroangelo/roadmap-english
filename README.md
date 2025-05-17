@@ -45,6 +45,6 @@
 | 27  | ⏳      | [Day 27](days/day27/) | Listening: English idioms |
 | 28  | ⏳      | [Day 28](days/day28/) | Writing: Weekend plans |
 | 29  | ⏳      | [Day 29](days/day29/) | Grammar: Prepositions |
-| 30  | ✅      | [Day 30](days/day30.md) | Summary and Introduction of Scientific Research |
+| 30  | ✅      | [Day 30](days/day30.md) | Abstract and Introduction of Scientific Research |
 
 ---
