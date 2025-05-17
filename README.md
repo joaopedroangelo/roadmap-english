@@ -20,7 +20,7 @@
 | 02  | ✅      | [Day 02](days/day02.md) | Text Translate |
 | 03  | ✅      | [Day 03](days/day03.md) | Vocabulary: Revision |
 | 04  | ✅      | [Day 04](days/day04.md) | Music: Wish You Were Here |
-| 05  | ⏳      | [Day 05](days/day05/) | Writing: My Daily Routine |
+| 05  | ✅      | [Day 05](days/day05.md) | Summary and Introduction of Scientific Research |
 | 06  | ⏳      | [Day 06](days/day06/) | Grammar: Present Simple |
 | 07  | ⏳      | [Day 07](days/day07/) | Read a short story |
 | 08  | ⏳      | [Day 08](days/day08/) | Describe a picture |
