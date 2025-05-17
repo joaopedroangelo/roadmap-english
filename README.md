@@ -20,8 +20,8 @@
 | 02  | ✅      | [Day 02](days/day02.md) | Text Translate |
 | 03  | ✅      | [Day 03](days/day03.md) | Vocabulary: Revision |
 | 04  | ✅      | [Day 04](days/day04.md) | Music: Wish You Were Here |
-| 05  | ✅      | [Day 05](days/day05.md) | Summary and Introduction of Scientific Research |
-| 06  | ⏳      | [Day 06](days/day06/) | Grammar: Present Simple |
+| 05  | ⏳      | [Day 05](days/day05/) | Grammar: Present Simple |
+| 06  | ⏳      | [Day 06](days/day06/) | Music: |
 | 07  | ⏳      | [Day 07](days/day07/) | Read a short story |
 | 08  | ⏳      | [Day 08](days/day08/) | Describe a picture |
 | 09  | ⏳      | [Day 09](days/day09/) | Vocabulary: Travel |
@@ -45,6 +45,6 @@
 | 27  | ⏳      | [Day 27](days/day27/) | Listening: English idioms |
 | 28  | ⏳      | [Day 28](days/day28/) | Writing: Weekend plans |
 | 29  | ⏳      | [Day 29](days/day29/) | Grammar: Prepositions |
-| 30  | ⏳      | [Day 30](days/day30/) | Midpoint reflection |
+| 30  | ✅      | [Day 30](days/day30.md) | Summary and Introduction of Scientific Research |
 
 ---
