@@ -1,32 +1,55 @@
-## Overview
+## Overview (Visão geral)
 
 ---
-### Comparing Traditional Recipe
+### Comparing Traditional Recipe (Comparando Receitas Tradicionais)
 
 The concept of knowledge distillation in the field of AI and deep learning (DL) refers to the process of transferring knowledge from a large,
 complex model (teacher) to a smaller, more efficient model (student) Gou et al. (2021).
 This technique is pivotal in mitigating the challenges posed by the computational
 demands and resource constraints of deploying large-scale models in practical applications.
 
+**O conceito de destilação de conhecimento na área de IA e aprendizagem profunda (DL) refere-se ao processo de transferência de conhecimento de um modelo amplo e complexo (professor) para um modelo menor e mais eficiente (aluno) (Gou et al. (2021).
+Essa técnica é fundamental para mitigar os desafios impostos pelas demandas computacionais e restrições de recursos da implantação de modelos em larga escala em aplicações práticas.**
+
 Historically, knowledge distillation techniques, prior to the era of LLMs, primarily concentrated on transferring knowledge from complex,
 often cumbersome neural networks to more compact and efficient architectures Sanh et al. (2019); Kim and Rush (2016).
 his process was largely driven by the need to deploy machine learning models in resource-constrained environments, such as mobile devices or edge computing platforms,
 where the computational power and memory are limited. 
+
+**Historicamente, as técnicas de destilação de conhecimento, antes da era dos LLMs, concentravam-se principalmente na transferência de conhecimento de redes neurais complexas,
+muitas vezes pesadas, para arquiteturas mais compactas e eficientes (Sanh et al., 2019); Kim e Rush (2016).
+Este processo foi amplamente impulsionado pela necessidade de implantar modelos de aprendizado de máquina em ambientes com recursos limitados, como dispositivos móveis ou plataformas de computação de ponta,
+onde o poder computacional e a memória são limitados.**
 
 The focus was predominantly on ad-hoc neural architecture selection and training objectives tailored for single tasks.
 These earlier methods involved training a smaller student network to mimic the output of a larger teacher network,
 often through techniques like soft target training, where the student learns from the softened softmax output of the teacher.
 Please refer to the survey Gou et al. (2021) for more details on general knowledge distillation techniques in AI and DL.
 
+**O foco estava predominantemente na seleção de arquitetura neural ad-hoc e em objetivos de treinamento adaptados para tarefas individuais.
+Esses métodos anteriores envolviam o treinamento de uma rede menor de alunos para imitar a saída de uma rede maior de professores,
+frequentemente por meio de técnicas como treinamento de alvos suaves, em que o aluno aprende com a saída suave máxima suavizada do professor.
+Consulte a pesquisa de Gou et al. (2021) para obter mais detalhes sobre técnicas de destilação de conhecimento geral em IA e DL.**
+
 In contrast, the advent of LLMs has revolutionized the knowledge distillation landscape.
 The current era of knowledge distillation in LLMs shifts the focus from mere architecture compression to knowledge elicitation and transfer Taori et al. (2023);
 Chaudhary (2023); Tunstall et al. (2023).
 
+**Em contraste, o advento dos LLMs revolucionou o cenário da destilação do conhecimento.
+A era atual da destilação do conhecimento em LLMs desloca o foco da mera compressão da arquitetura para a elicitação e transferência de conhecimento. Taori et al. (2023);
+Chaudhary (2023); Tunstall et al. (2023).**
+
 This paradigm change is largely due to the expansive and deep-seated knowledge that LLMs like GPT-4 and Gemini possess.
 And the inaccessible parameters of LLMs make it hard to compress them by using pruning Han et al. (2016) or quantization Liu et al. (2023a) techniques.
 
+**Essa mudança de paradigma se deve, em grande parte, ao conhecimento amplo e profundo que LLMs como GPT-4 e Gemini possuem.
+E os parâmetros inacessíveis dos LLMs dificultam sua compactação por meio de técnicas de poda (Han et al., 2016) ou quantização (Liu et al., 2023a).**
+
 Unlike the earlier era, where the goal was to replicate the output behavior of the teacher model or reduce the model size,
 the current focus in LLM-based knowledge distillation is to elicit the specific knowledge these models have.
+
+**Diferentemente da era anterior, em que o objetivo era replicar o comportamento de saída do modelo do professor ou reduzir o tamanho do modelo,
+o foco atual na destilação de conhecimento baseada em LLM é extrair o conhecimento específico que esses modelos possuem.**
 
 The key to this modern approach lies in heuristic and carefully designed prompts, which are used to elicit specific knowledge Ding et al. (2023b)
 or capabilities Chaudhary (2023) from the LLMs.
@@ -34,20 +57,41 @@ These prompts are crafted to tap into the LLM’s understanding and capabilities
 ranging from natural language understanding He et al. (2023a) to more complex cognitive tasks like reasoning Hsieh et al. (2023)
 and problem-solving Qiao et al. (2024).
 
+**A chave para essa abordagem moderna reside em prompts heurísticos e cuidadosamente elaborados, que são usados ​​para extrair conhecimento específico (Ding et al., 2023b)
+ou capacidades (Chaudhary, 2023)) dos LLMs.
+Esses prompts são elaborados para explorar a compreensão e as capacidades do LLM em vários domínios,
+desde a compreensão da linguagem natural (He et al., 2023a) até tarefas cognitivas mais complexas, como raciocínio (Hsieh et al., 2023)
+e resolução de problemas (Qiao et al., 2024).**
+
 The use of prompts as a means of knowledge elicitation offers a more flexible and dynamic approach to distillation.
 It allows for a more targeted extraction of knowledge, focusing on specific skills or domains of interest.
 This method is particularly effective in harnessing the emergent abilities of LLMs, where the models exhibit capabilities beyond their explicit training objectives.
+
+**O uso de prompts como meio de elicitação de conhecimento oferece uma abordagem mais flexível e dinâmica para a destilação.
+Permite uma extração de conhecimento mais direcionada, com foco em habilidades ou domínios de interesse específicos.
+Este método é particularmente eficaz no aproveitamento das habilidades emergentes de LLMs, onde os modelos demonstram capacidades que vão além de seus objetivos explícitos de treinamento.**
 
 Furthermore, this era of knowledge distillation also emphasizes the transfer of more abstract qualities such as reasoning patterns Mitra et al. (2023),
 preference alignment Cui et al. (2023a), and value alignment Sun et al. (2024b).
 This is in stark contrast to the earlier focus on output replication Taori et al. (2023),
 indicating a shift towards a more holistic and comprehensive transfer of cognitive capabilities.
 
+**Além disso, esta era de destilação do conhecimento também enfatiza a transferência de qualidades mais abstratas, como padrões de raciocínio de Mitra et al. (2023),
+alinhamento de preferências de Cui et al. (2023a) e alinhamento de valores de Sun et al. (2024b).
+Isso contrasta fortemente com o foco anterior na replicação de resultados de Taori et al. (2023),
+indicando uma mudança em direção a uma transferência mais holística e abrangente de capacidades cognitivas.**
+
 The current techniques involve not just the replication of outputs, but also the emulation of the thought processes Mitra et al. (2023)
 and decision-making Asai et al. (2023) patterns of the teacher model.
 
+**As técnicas atuais envolvem não apenas a replicação de resultados, mas também a emulação dos processos de pensamento (Mitra et al., 2023)
+e dos padrões de tomada de decisão (Asai et al., 2023)) do modelo do professor.**
+
 This involves complex strategies like chain-of-thought prompting, where the student model is trained to learn the reasoning process of the teacher,
 thereby enhancing its problem-solving and decision-making capabilities.
+
+**Isso envolve estratégias complexas, como a estimulação por cadeia de pensamento, em que o modelo do aluno é treinado para aprender o processo de raciocínio do professor,
+aprimorando assim suas capacidades de resolução de problemas e tomada de decisões.**
 
 ---
 ### Relation to Data Augmentation (DA)
