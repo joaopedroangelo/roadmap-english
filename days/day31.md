@@ -102,6 +102,12 @@ Unlike traditional DA techniques such as paraphrasing Gangal et al. (2022) or ba
 which primarily aim at expanding the training dataset in a somewhat mechanical manner,
 DA within the context of LLMs focuses on the generation of novel, context-rich training data tailored to specific domains and skills.
 
+**Na era dos LLMs, a Ampliação de Dados (AD) Wang et al. (2022a); Ye et al. (2022)
+surge como um paradigma crítico e integral ao processo de destilação do conhecimento.
+Ao contrário das técnicas tradicionais de AD, como a paráfrase de Gangal et al. (2022) ou a retrotradução de Longpre et al. (2019),
+que visam principalmente expandir o conjunto de dados de treinamento de forma um tanto mecânica,
+a AD no contexto dos LLMs concentra-se na geração de dados de treinamento novos e ricos em contexto, adaptados a domínios e habilidades específicos.**
+
 The relationship between DA and KD in LLMs is both symbiotic and foundational. By leveraging a set of seed knowledge,
 KD employs DA to prompt LLMs to produce explicit data that encapsulates specific skills or domain expertise Chaudhary (2023);
 West et al. (2022). This method stands out as a potent mechanism for bridging the knowledge and capability gap between proprietary and open-source models.
@@ -109,15 +115,32 @@ Through DA, LLMs are prompted to create targeted, high-quality datasets that are
 This approach enables the distillation process to be more effective,
 ensuring that the distilled models not only replicate the teacher model’s output behavior but also embody its deep-seated understanding and cognitive strategies.
 
+**A relação entre DA e KD em LLMs é simbiótica e fundamental. Ao alavancar um conjunto de conhecimento inicial,
+KD emprega DA para induzir LLMs a produzir dados explícitos que encapsulam habilidades específicas ou expertise de domínio (Chaudhary, 2023);
+West et al. (2022). Este método se destaca como um mecanismo potente para preencher a lacuna de conhecimento e capacidade entre modelos proprietários e de código aberto.
+Por meio da DA, LLMs são induzidos a criar conjuntos de dados direcionados e de alta qualidade que não são apenas maiores em volume, mas também ricos em diversidade e especificidade.
+Essa abordagem permite que o processo de destilação seja mais eficaz,
+garantindo que os modelos destilados não apenas reproduzam o comportamento de saída do modelo do professor, mas também incorporem sua compreensão e estratégias cognitivas arraigadas.**
+
 DA acts as a force multiplier,
 enabling the distilled models to acquire and refine capabilities that would otherwise require exponentially larger datasets and computational resources.
 It facilitates a more effective transfer of knowledge,
 focusing on the qualitative aspects of learning rather than quantitative expansion.
 
+**A DA atua como um multiplicador de força,
+permitindo que os modelos destilados adquiram e refinem capacidades que, de outra forma, exigiriam conjuntos de dados e recursos computacionais exponencialmente maiores.
+Ela facilita uma transferência de conhecimento mais eficaz,
+com foco nos aspectos qualitativos da aprendizagem em vez da expansão quantitativa.**
+
 This strategic use of DA within KD processes underscores a pivotal shift towards a more efficient, sustainable,
 and accessible approach to harnessing the power of LLMs. It empowers open-source models with the ability to approximate the contextual adeptness,
 ethical alignment, and deep semantic insights characteristic of their proprietary counterparts,
 thereby democratizing access to advanced AI capabilities and fostering innovation across a broader spectrum of applications and users.
+
+**Esse uso estratégico de DA nos processos de KD destaca uma mudança crucial em direção a uma abordagem mais eficiente, sustentável
+e acessível para aproveitar o poder dos LLMs. Ela capacita modelos de código aberto com a capacidade de aproximar a adequação contextual,
+o alinhamento ético e os profundos insights semânticos característicos de suas contrapartes proprietárias,
+democratizando assim o acesso a recursos avançados de IA e fomentando a inovação em um espectro mais amplo de aplicações e usuários.**
 
 ---
 ### Survey Scope
