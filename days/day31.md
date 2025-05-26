@@ -184,7 +184,7 @@ A subseção "destilação" examina abordagens de aprendizagem como o ajuste fin
 técnicas de aprendizado por reforço Cui et al. (2023a) e estratégias de otimização de classificação Tunstall et al. (2023).
 Juntas, essas técnicas demonstram como o KD permite que modelos de código aberto obtenham conhecimento de modelos proprietários.**
 
-**Skill Distillation - Destilação de habilidade**
+**Skill Distillation - Destilação de habilidade**<br>
 This facet examines the specific competencies and capabilities enhanced through KD.
 It encompasses detailed discussions on context following Taori et al. (2023); Luo et al. (2023c),
 with subtopics like instruction following and retrieval-augmented generation (RAG) Capability.
@@ -205,7 +205,7 @@ Chaudhary (2023) é examinada por meio de lentes como compreensão de linguagem 
 sistemas de recomendação, avaliação de geração de texto e geração de código. Por fim, a pesquisa aborda a multimodalidade (Liu et al. (2023e); Zhao et al. (2023b),
 explorando como o KD aprimora a capacidade dos LLMs de integrar múltiplas formas de contribuição.**
 
-**Verticalization Distillation - Destilação de Verticalização**
+**Verticalization Distillation - Destilação de Verticalização**<br>
 This section assesses the application of KD across diverse vertical domains,
 offering insights into how distilled LLMs can be tailored for specialized fields such as Law LAW (2023), Medical & Healthcare Wang et al. (2023a),
 Finance Zhang and Yang (2023), Science Zhang et al. (2024), among others. This exploration not only showcases the practical
@@ -218,7 +218,7 @@ oferecendo insights sobre como LLMs destilados podem ser adaptados para áreas e
 Por meio dessas facetas, esta pesquisa fornece uma análise abrangente do Desenvolvimento de Conhecimento em LLMs,
 orientando pesquisadores e profissionais por meio de metodologias, desafios e oportunidades neste domínio em rápida evolução.**
 
-**Declaration - Declaração**
+**Declaration - Declaração**<br>
 This survey represents our earnest effort to provide a comprehensive and insightful overview of knowledge distillation techniques applied to LLMs,
 focusing on algorithms, skill enhancement, and domain-specific applications.
 Given the vast and rapidly evolving nature of this field,
