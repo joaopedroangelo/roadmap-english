@@ -94,7 +94,7 @@ thereby enhancing its problem-solving and decision-making capabilities.
 aprimorando assim suas capacidades de resolução de problemas e tomada de decisões.**
 
 ---
-### Relation to Data Augmentation (DA)
+### Relation to Data Augmentation (DA) - Relação com Aumento de Dados
 
 In the era of LLMs, Data Augmentation (DA) Wang et al. (2022a); Ye et al. (2022)
 emerges as a critical paradigm integral to the process of knowledge distillation.
@@ -143,17 +143,25 @@ o alinhamento ético e os profundos insights semânticos característicos de sua
 democratizando assim o acesso a recursos avançados de IA e fomentando a inovação em um espectro mais amplo de aplicações e usuários.**
 
 ---
-### Survey Scope
+### Survey Scope - Escopo da Pesquisa
 
 Building on the discussions introduced earlier,
 this survey aims to comprehensively explore the landscape of knowledge distillation within the context of LLMs,
 following a meticulously structured taxonomy as in Figure 3.
 
+**Com base nas discussões apresentadas anteriormente,
+esta pesquisa visa explorar de forma abrangente o panorama da destilação do conhecimento no contexto dos LLMs,
+seguindo uma taxonomia meticulosamente estruturada, como na Figura 3.**
+
 The survey’s scope is delineated through three primary facets: KD Algorithms, Skill Distillation, and Verticalization Distillation.
 Each facet encapsulates a range of subtopics and methodologies.
 It’s important to note that KD algorithms provide the technical foundations for skill distillation and verticalization distillation.
 
-**KD Algorithms.**
+**O escopo da pesquisa é delineado por três facetas principais: Algoritmos de KD, Destilação de Habilidades e Destilação de Verticalização.
+Cada faceta abrange uma gama de subtópicos e metodologias.
+É importante observar que os algoritmos de KD fornecem as bases técnicas para a destilação de habilidades e a destilação de verticalização.**
+
+**KD Algorithms - Algoritmos da Destilação de Conhecimento**
 This segment focuses on the technical foundations and methodologies of knowledge distillation.
 It includes an in-depth exploration of the processes involved in constructing knowledge from teacher models (e.g., proprietary LLMs)
 and integrating this knowledge into student models (e.g., open-source LLMs).
@@ -165,7 +173,18 @@ The ‘distillation’ subsection examines learning approaches like supervised f
 reinforcement learning techniques Cui et al. (2023a), and rank optimization strategies Tunstall et al. (2023).
 Together, these techniques demonstrate how KD enables open-source models to obtain knowledge from proprietary ones.
 
-**Skill Distillation.**
+**Este segmento concentra-se nos fundamentos técnicos e metodologias da destilação do conhecimento.
+Inclui uma exploração aprofundada dos processos envolvidos na construção do conhecimento a partir de modelos de professores (por exemplo, LLMs proprietários)
+e na integração desse conhecimento aos modelos de alunos (por exemplo, LLMs de código aberto).
+Sob o escopo do "conhecimento", aprofundamo-nos em estratégias como rotulagem (Hsieh et al., 2023), expansão (Taori et al., 2023),
+curadoria (Gunasekar et al., 2023), compreensão de características (Agarwal et al., 2024), mecanismos de feedback (Tunstall et al., 2023)
+e geração de autoconhecimento (Wang et al., 2022a).
+Esta exploração busca desvendar as diversas maneiras pelas quais o conhecimento pode ser identificado, expandido e curado para uma destilação eficaz.
+A subseção "destilação" examina abordagens de aprendizagem como o ajuste fino supervisionado (SFT, na sigla em inglês) (Wang et al., 2022a). (2022a), minimização de divergência Agarwal et al. (2024),
+técnicas de aprendizado por reforço Cui et al. (2023a) e estratégias de otimização de classificação Tunstall et al. (2023).
+Juntas, essas técnicas demonstram como o KD permite que modelos de código aberto obtenham conhecimento de modelos proprietários.**
+
+**Skill Distillation - Destilação de habilidade**
 This facet examines the specific competencies and capabilities enhanced through KD.
 It encompasses detailed discussions on context following Taori et al. (2023); Luo et al. (2023c),
 with subtopics like instruction following and retrieval-augmented generation (RAG) Capability.
@@ -176,7 +195,17 @@ Chaudhary (2023) is scrutinized through lenses like natural language understandi
 recommendation systems, text generation evaluation, and code generation. Finally, the survey addresses multi-modality Liu et al. (2023e); Zhao et al. (2023b),
 exploring how KD enhances LLMs’ ability to integrate multiple forms of input.
 
-**Verticalization Distillation.**
+**Esta faceta examina as competências e capacidades específicas aprimoradas pelo KD.
+Ela abrange discussões detalhadas sobre o contexto, seguindo Taori et al. (2023); Luo et al. (2023c),
+com subtópicos como acompanhamento de instruções e capacidade de geração aumentada de recuperação (RAG).
+No âmbito do alinhamento (Mitra et al. (2023); Tunstall et al. (2023), a pesquisa investiga padrões de pensamento, modelagem de persona/preferência
+e alinhamento de valores.
+A categoria "agente" aprofunda-se em habilidades como Uso de Ferramentas e Planejamento. A especialização em tarefas de PNL (Dai et al. (2023a); Jung et al. (2023);
+Chaudhary (2023) é examinada por meio de lentes como compreensão de linguagem natural (NLU), geração de linguagem natural (NLG), recuperação de informações,
+sistemas de recomendação, avaliação de geração de texto e geração de código. Por fim, a pesquisa aborda a multimodalidade (Liu et al. (2023e); Zhao et al. (2023b),
+explorando como o KD aprimora a capacidade dos LLMs de integrar múltiplas formas de contribuição.**
+
+**Verticalization Distillation - Destilação de Verticalização**
 This section assesses the application of KD across diverse vertical domains,
 offering insights into how distilled LLMs can be tailored for specialized fields such as Law LAW (2023), Medical & Healthcare Wang et al. (2023a),
 Finance Zhang and Yang (2023), Science Zhang et al. (2024), among others. This exploration not only showcases the practical
@@ -184,7 +213,12 @@ implications of KD techniques but also highlights their transformative impact on
 Through these facets, this survey provides a comprehensive analysis of KD in LLMs,
 guiding researchers and practitioners through methodologies, challenges, and opportunities in this rapidly evolving domain.
 
-**Declaration.**
+**Esta seção avalia a aplicação do Desenvolvimento de Conhecimento em diversos domínios verticais,
+oferecendo insights sobre como LLMs destilados podem ser adaptados para áreas especializadas como Direito (2023), Medicina e Saúde (Wang et al., 2023a), Finanças (Zhang e Yang, 2023), Ciência (Zhang et al., 2024), entre outros. Esta exploração não apenas demonstra as implicações práticas das técnicas de Desenvolvimento de Conhecimento, mas também destaca seu impacto transformador em soluções de IA específicas para cada domínio.
+Por meio dessas facetas, esta pesquisa fornece uma análise abrangente do Desenvolvimento de Conhecimento em LLMs,
+orientando pesquisadores e profissionais por meio de metodologias, desafios e oportunidades neste domínio em rápida evolução.**
+
+**Declaration - Declaração**
 This survey represents our earnest effort to provide a comprehensive and insightful overview of knowledge distillation techniques applied to LLMs,
 focusing on algorithms, skill enhancement, and domain-specific applications.
 Given the vast and rapidly evolving nature of this field,
@@ -192,6 +226,14 @@ especially with the prevalent practice of eliciting knowledge from training data
 we acknowledge that this manuscript may not encompass every pertinent study or development.
 Nonetheless, it endeavors to introduce the foundational paradigms of knowledge distillation,
 highlighting key methodologies and their impacts across a range of applications.
+
+**Esta pesquisa representa nosso esforço sincero para fornecer uma visão geral abrangente e perspicaz das técnicas de destilação de conhecimento aplicadas a LLMs,
+com foco em algoritmos, aprimoramento de habilidades e aplicações específicas de domínio.
+Dada a natureza vasta e em rápida evolução deste campo,
+especialmente com a prática predominante de extrair conhecimento de dados de treinamento no meio acadêmico,
+reconhecemos que este manuscrito pode não abranger todos os estudos ou desenvolvimentos pertinentes.
+No entanto, ele se esforça para apresentar os paradigmas fundamentais da destilação de conhecimento,
+destacando as principais metodologias e seus impactos em uma gama de aplicações.**
 
 ---
 ### Distillation Pipeline in LLM Era
