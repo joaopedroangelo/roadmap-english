@@ -161,7 +161,7 @@ It’s important to note that KD algorithms provide the technical foundations fo
 Cada faceta abrange uma gama de subtópicos e metodologias.
 É importante observar que os algoritmos de KD fornecem as bases técnicas para a destilação de habilidades e a destilação de verticalização.**
 
-**KD Algorithms - Algoritmos da Destilação de Conhecimento**
+**KD Algorithms - Algoritmos da Destilação de Conhecimento**<br>
 This segment focuses on the technical foundations and methodologies of knowledge distillation.
 It includes an in-depth exploration of the processes involved in constructing knowledge from teacher models (e.g., proprietary LLMs)
 and integrating this knowledge into student models (e.g., open-source LLMs).
