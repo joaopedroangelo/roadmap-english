@@ -207,7 +207,7 @@ Em certos casos especializados, as saídas também podem incluir logits ou recur
 embora isso seja menos comum devido à complexidade e aos requisitos específicos de tais formatos de dados.<br>
 Os exemplos de conhecimento gerados constituem o núcleo do conhecimento de destilação, encapsulando a compreensão e as habilidades avançadas do professor (LLM)**
 
-**IV. Training the Student Model with a Specific Learning Objective - Treinamento do Modelo de Aluno com um Objetivo de Aprendizagem Específica**<br>
+**IV. Training the Student Model with a Specific Learning Objective - Treinamento do Modelo Aluno com um Objetivo de Aprendizagem Específica**<br>
 The final stage involves the utilization of the generated knowledge examples to train the student model.
 This training is guided by a loss function that aligns with the learning objectives.
 The loss function quantifies the student model’s performance in replicating or adapting the knowledge from the teacher model.
