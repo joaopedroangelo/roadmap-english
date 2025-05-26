@@ -146,106 +146,7 @@ o alinhamento ético e os profundos insights semânticos característicos de sua
 democratizando assim o acesso a recursos avançados de IA e fomentando a inovação em um espectro mais amplo de aplicações e usuários.**
 
 ---
-### Survey Scope - Escopo da Pesquisa
-
-Building on the discussions introduced earlier,
-this survey aims to comprehensively explore the landscape of knowledge distillation within the context of LLMs,
-following a meticulously structured taxonomy.
-
-**Com base nas discussões apresentadas anteriormente,
-esta pesquisa visa explorar de forma abrangente o panorama da destilação do conhecimento no contexto dos LLMs,
-seguindo uma taxonomia meticulosamente estruturada**
-
-The survey’s scope is delineated through three primary facets: KD Algorithms, Skill Distillation, and Verticalization Distillation.
-Each facet encapsulates a range of subtopics and methodologies.
-It’s important to note that KD algorithms provide the technical foundations for skill distillation and verticalization distillation.
-
-**O escopo da pesquisa é delineado por três facetas principais:<br>
-Algoritmos de KD, Destilação de Habilidades e Destilação de Verticalização.<br>
-Cada faceta abrange uma gama de subtópicos e metodologias.<br>
-É importante observar que os algoritmos de Destilação fornecem as bases técnicas para a destilação de habilidades e a destilação de verticalização.**
-
-**KD Algorithms**<br>
-This segment focuses on the technical foundations and methodologies of knowledge distillation.
-It includes an in-depth exploration of the processes involved in constructing knowledge from teacher models (e.g., proprietary LLMs)
-and integrating this knowledge into student models (e.g., open-source LLMs).
-Under the umbrella of ‘knowledge’, we delve into strategies such as labeling Hsieh et al. (2023), expansion Taori et al. (2023),
-curation Gunasekar et al. (2023), feature understanding Agarwal et al. (2024), feedback mechanisms Tunstall et al. (2023),
-and self-knowledge generation Wang et al. (2022a).
-This exploration seeks to uncover the various ways in which knowledge can be identified, expanded, and curated for effective distillation.
-The ‘distillation’ subsection examines learning approaches like supervised fine-tuning (SFT) Wang et al. (2022a), divergence minimization Agarwal et al. (2024),
-reinforcement learning techniques Cui et al. (2023a), and rank optimization strategies Tunstall et al. (2023).
-Together, these techniques demonstrate how KD enables open-source models to obtain knowledge from proprietary ones.
-
-**Algoritmos da Destilação de Conhecimento**<br>
-**Este segmento concentra-se nos fundamentos técnicos e metodologias da destilação do conhecimento.<br>
-Inclui uma exploração aprofundada dos processos envolvidos na extração do conhecimento a partir de modelos de professores (por exemplo, LLMs proprietários)
-e na integração desse conhecimento aos modelos de alunos (por exemplo, LLMs de código aberto).<br>
-Sob o escopo do "conhecimento", aprofundamo-nos em estratégias como rotulagem (Hsieh et al., 2023), expansão (Taori et al., 2023),
-curadoria (Gunasekar et al., 2023), compreensão de características (Agarwal et al., 2024), mecanismos de feedback (Tunstall et al., 2023)
-e geração de autoconhecimento (Wang et al., 2022a).<br>
-Esta exploração busca desvendar as diversas maneiras pelas quais o conhecimento pode ser identificado, expandido e curado para uma destilação eficaz.<br>
-A subseção "destilação" examina abordagens de aprendizagem como o ajuste fino supervisionado (SFT, na sigla em inglês) (Wang et al., 2022a). (2022a), minimização de divergência Agarwal et al. (2024),
-técnicas de aprendizado por reforço Cui et al. (2023a) e estratégias de otimização de classificação Tunstall et al. (2023).<br>
-Juntas, essas técnicas demonstram como a Destilação permite que modelos de código aberto obtenham conhecimento de modelos proprietários.**
-
-**Skill Distillation**<br>
-This facet examines the specific competencies and capabilities enhanced through KD.
-It encompasses detailed discussions on context following Taori et al. (2023); Luo et al. (2023c),
-with subtopics like instruction following and retrieval-augmented generation (RAG) Capability.
-In the realm of alignment Mitra et al. (2023); Tunstall et al. (2023), the survey investigates thinking patterns, persona/preference modeling,
-and value alignment.
-The ‘agent’ category delves into skills such as Tool Using and Planning. NLP task specialization Dai et al. (2023a); Jung et al. (2023);
-Chaudhary (2023) is scrutinized through lenses like natural language understanding (NLU), natural language generation (NLG), information retrieval,
-recommendation systems, text generation evaluation, and code generation. Finally, the survey addresses multi-modality Liu et al. (2023e); Zhao et al. (2023b),
-exploring how KD enhances LLMs’ ability to integrate multiple forms of input.
-
-**Destilação de Habilidade**<br>
-**Esta faceta examina as competências e capacidades específicas aprimoradas pela Destilação.<br>
-Ela abrange discussões detalhadas sobre o contexto, seguindo Taori et al. (2023); Luo et al. (2023c),
-com subtópicos como acompanhamento de instruções e capacidade de geração aumentada de recuperação (RAG).<br>
-No âmbito do alinhamento (Mitra et al. (2023); Tunstall et al. (2023), a pesquisa investiga padrões de pensamento, modelagem de persona/preferência
-e alinhamento de valores.<br>
-A categoria "agente" aprofunda-se em habilidades como Uso de Ferramentas e Planejamento.<br>
-A especialização em tarefas de PNL (Dai et al. (2023a); Jung et al. (2023);
-Chaudhary (2023) é examinada por meio de lentes como compreensão de linguagem natural (NLU), geração de linguagem natural (NLG), recuperação de informações,
-sistemas de recomendação, avaliação de geração de texto e geração de código.<br>
-Por fim, a pesquisa aborda a multimodalidade (Liu et al. (2023e); Zhao et al. (2023b),
-explorando como o KD aprimora a capacidade dos LLMs de integrar múltiplas formas de contribuição.**
-
-**Verticalization Distillation - Destilação de Verticalização**<br>
-This section assesses the application of KD across diverse vertical domains,
-offering insights into how distilled LLMs can be tailored for specialized fields such as Law LAW (2023), Medical & Healthcare Wang et al. (2023a),
-Finance Zhang and Yang (2023), Science Zhang et al. (2024), among others. This exploration not only showcases the practical
-implications of KD techniques but also highlights their transformative impact on domain-specific AI solutions.
-Through these facets, this survey provides a comprehensive analysis of KD in LLMs,
-guiding researchers and practitioners through methodologies, challenges, and opportunities in this rapidly evolving domain.
-
-**Esta seção avalia a aplicação do Desenvolvimento de Conhecimento em diversos domínios verticais,
-oferecendo insights sobre como LLMs destilados podem ser adaptados para áreas especializadas como Direito (2023), Medicina e Saúde (Wang et al., 2023a), Finanças (Zhang e Yang, 2023), Ciência (Zhang et al., 2024), entre outros.<br>
-Esta exploração não apenas demonstra as implicações práticas das técnicas de Desenvolvimento de Conhecimento, mas também destaca seu impacto transformador em soluções de IA específicas para cada domínio.<br>
-Por meio dessas facetas, esta pesquisa fornece uma análise abrangente do Desenvolvimento de Conhecimento em LLMs,
-orientando pesquisadores e profissionais por meio de metodologias, desafios e oportunidades neste domínio em rápida evolução.**
-
-**Declaration - Declaração**<br>
-This survey represents our earnest effort to provide a comprehensive and insightful overview of knowledge distillation techniques applied to LLMs,
-focusing on algorithms, skill enhancement, and domain-specific applications.
-Given the vast and rapidly evolving nature of this field,
-especially with the prevalent practice of eliciting knowledge from training data across academia,
-we acknowledge that this manuscript may not encompass every pertinent study or development.
-Nonetheless, it endeavors to introduce the foundational paradigms of knowledge distillation,
-highlighting key methodologies and their impacts across a range of applications.
-
-**Esta pesquisa representa nosso esforço sincero para fornecer uma visão geral abrangente e perspicaz das técnicas de destilação de conhecimento aplicadas a LLMs,
-com foco em algoritmos, aprimoramento de habilidades e aplicações específicas de domínio.<br>
-Dada a natureza vasta e em rápida evolução deste campo,
-especialmente com a prática predominante de extrair conhecimento de dados de treinamento no meio acadêmico,
-reconhecemos que este manuscrito pode não abranger todos os estudos ou desenvolvimentos pertinentes.<br>
-No entanto, ele se esforça para apresentar os paradigmas fundamentais da destilação de conhecimento,
-destacando as principais metodologias e seus impactos em uma gama de aplicações.**
-
----
-### Distillation Pipeline in LLM Era - Pipeline de destilação na era LLM
+### Distillation Pipeline in LLM Era - Pipeline de Destilação na era LLM
 
 ![image](https://github.com/user-attachments/assets/337e4780-f638-434a-9d2f-a8326864d506)
 
@@ -265,7 +166,7 @@ in the successful distillation of knowledge. An illustration is shown in Figure 
 **O esboço desse pipeline pode ser amplamente categorizado em quatro etapas distintas, cada uma desempenhando um papel crucial
 na destilação bem-sucedida do conhecimento. Uma ilustração é mostrada na Figura 4. O pipeline detalhado também pode ser visto na Figura 2.**
 
-**I. Target Skill - Domínios Alvo**<br>
+**I. Target Skill - Habilidade Alvo**<br>
 The first stage involves directing the teacher LLM towards a specific target skill or domain.
 This is achieved through carefully crafted instructions or templates that guide the LLM’s focus.
 These instructions are designed to elicit responses that demonstrate the LLM’s proficiency in a particular area,
